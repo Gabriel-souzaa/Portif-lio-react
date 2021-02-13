@@ -3,3 +3,21 @@
     margin: 0;
     padding: 0;
 }
+
+.studentImg{
+    width: 500px;
+    height: 500px;
+}
+
+.iconArrow{
+    width: 40px;
+    height: 40px;
+}
+
+@media(max-width: 775px){
+    
+    .studentImg{
+        width: 400px;
+        height: 400px;
+    }
+}
