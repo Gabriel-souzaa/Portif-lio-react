@@ -5,17 +5,18 @@ import './styles.css'
 
 import MyPicture from '../../assets/img/eu2.png'
 
-export default function Home(){
+export default function Header(){
     return (
         <HearderHome>
             <PictureName>
                 <img src={MyPicture} className="mypicture"/>
+                <p className="name">Gabriel Freitas</p>
             </PictureName>
             <NavMenu>
-                <Link to="/" >Home</Link>
-                <Link to="/sobre">Sobre</Link>
-                <Link to="/technologies">Tecnologias</Link>
-                <Link to="/contact">Contact</Link>
+                <Link className="link" to="/" >Home</Link>
+                <Link className="link" to="/sobre">Sobre</Link>
+                <Link className="link" to="/technologies">Tecnologias</Link>
+                <Link className="link" to="/contact">Contact</Link>
             </NavMenu>
         </HearderHome>
     )
