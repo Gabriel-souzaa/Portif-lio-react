@@ -20,3 +20,15 @@
     0% { margin-left: 0; }
     100% { margin-left: 50%; }
 }
+
+@media (max-width: 600px){
+    .linelink{
+        width: 25%;
+        height: 4px;
+        background-color: #91B2FB;
+    }
+    @keyframes mexe_prala_e_praca {
+        0% { margin-left: 0; }
+        100% { margin-left: 0%; }
+    }
+}

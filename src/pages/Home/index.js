@@ -4,7 +4,7 @@ import { CardMyInformation, ContentHome, ButtonOnMe } from './styles'
 
 import Header from '../../components/Header'
 import Home from '../../components/Home'
-import Sobre from '../../components/Sobre'
+import About from '../../components/Sobre'
 import Contact from '../../components/Contact'
 import Footer from '../../components/Footer'
 import studentImg from '../../assets/img/image_home.png'
@@ -16,7 +16,7 @@ export default function Initial(){
         <>
             <Header />
             <Home/>
-            <Sobre />
+            <About />
             <Contact/>
             <Footer />
         </>

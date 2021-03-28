@@ -20,7 +20,7 @@ export default function Header(){
                     to="home"
                     spy={true}
                     smooth={true}
-                    offset={-140}
+                    offset={-160}
                     duration={500}
                 >
                     Home
@@ -38,6 +38,20 @@ export default function Header(){
                     Sobre
                     <div className="linelink"></div>
                 </Link>
+
+                <Link
+                    className="link"
+                    activeClass="active"
+                    to="tecnologia"
+                    spy={true}
+                    smooth={true}
+                    offset={-125}
+                    duration={500}
+                >
+                    Tecnologias
+                    <div className="linelink"></div>
+                </Link>
+
                 <Link
                     className="link"
                     activeClass="active"
@@ -48,13 +62,6 @@ export default function Header(){
                     duration={500}
                 >
                     Contact
-                    <div className="linelink"></div>
-                </Link>
-
-                <Link
-                    className="link"
-                >
-                    Tecnologias
                     <div className="linelink"></div>
                 </Link>
             </NavMenu>

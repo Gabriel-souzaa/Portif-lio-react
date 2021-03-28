@@ -4,14 +4,14 @@ export const ContentHome = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 50px;
 
     @media(max-width: 850px){
         flex-direction: column;
 
         .studentImg{
-            width: 50%;
-            height: 50%;
+            width: 300px;
+            height: 310px;
         }
     }
 `
