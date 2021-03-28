@@ -10,9 +10,9 @@ export default function Contact({id = "contact"}){
     async function handleSubmit(event) {
         event.preventDefault();
         
-        // console.log(name)
-        // console.log(email)
-        // console.log(message)
+        console.log(name)
+        console.log(email)
+        console.log(message)
     }
 
     return (
