@@ -1,5 +1,9 @@
 *{
-    background-color: #F0F8FF;
     margin: 0;
     padding: 0;
+}
+
+.container{
+    background-color: #20202a;
+    color: #fff;
 }

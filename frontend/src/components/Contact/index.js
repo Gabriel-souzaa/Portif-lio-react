@@ -1,18 +1,32 @@
 import React, {useState} from 'react'
+import SendEmail from '../../services/sendMail'
 
 import './styles.css'
 
 export default function Contact({id = "contact"}){
-    const [name, setName] = useState();
-    const [email, setEmail] = useState();
-    const [message, setMessage] = useState();
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
 
     async function handleSubmit(event) {
         event.preventDefault();
-        
-        console.log(name)
-        console.log(email)
-        console.log(message)
+
+        try {
+
+            const response = await SendEmail.sendEmail({
+                name,
+                email,
+                messageTxt: message
+            })
+    
+            if(response){
+                alert("E-mail enviado com sucesso")
+                console.log("Sucesso padrin")
+            }
+            
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     return (

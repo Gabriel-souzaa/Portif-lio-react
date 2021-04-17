@@ -13,12 +13,12 @@ import './styles.css'
 
 export default function Initial(){
     return (
-        <>
+        <div className="container">
             <Header />
             <Home/>
             <About />
             <Contact/>
             <Footer />
-        </>
+        </div>
     )
 }

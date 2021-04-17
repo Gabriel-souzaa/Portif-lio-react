@@ -43,6 +43,20 @@ export default function Technologies({id = "tecnologia"}){
                             <h4>PHP laravel</h4>
                         </div>
                     </div>
+                    <div className="tec_grid3">
+                        <div className="info_tecs">
+                            <img src={css3} width="100px" height="100px"/>
+                            <h4>Css3</h4>
+                        </div>
+                        <div className="info_tecs">
+                            <img src={html} width="100px" height="100px"/>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div className="info_tecs">
+                            <img src={laravel} width="100px" height="100px"/>
+                            <h4>PHP laravel</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

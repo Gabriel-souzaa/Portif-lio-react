@@ -3,14 +3,12 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 import { HearderHome, PictureName, NavMenu } from './styles'
 import './styles.css'
 
-import MyPicture from '../../assets/img/eu2.png'
-
 export default function Header(){
 
     return (
         <HearderHome>
             <PictureName>
-                <img src={MyPicture} className="mypicture"/>
+                <div className="avatar">G</div>
                 <p className="name">Gabriel Freitas</p>
             </PictureName>
             <NavMenu>

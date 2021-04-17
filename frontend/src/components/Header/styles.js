@@ -10,6 +10,8 @@ export const HearderHome = styled.div`
     z-index: 1000;
     top: 0;
     left: 0;
+    background-color: #20202a;
+    color: #fff;
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
 `
 
@@ -18,13 +20,30 @@ export const PictureName = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     .name{
-        color: #000;
         font-size: 23px;
         font-style: normal;
         font-family: Arial, Helvetica, sans-serif;
+        margin-left: 10px;
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: inline;
+        outline: inherit;
+        color: aliceblue;
+        font-weight: 600;
+        border: 2px solid #91B2FB;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 28px;
     }
 
     @media(max-width: 850px){
@@ -42,7 +61,6 @@ export const NavMenu = styled.div`
     .link{
         text-decoration: none;
         padding-left:50px;
-        color: #000;
         font-size: 25px;
         font-style: normal;
         cursor: pointer;
