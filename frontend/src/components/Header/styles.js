@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const HearderHome = styled.div`
     display: flex;
@@ -6,11 +6,10 @@ export const HearderHome = styled.div`
     border-bottom: 1px solid #eee;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    z-index: 1000;
+    background-color: #1C1C1C;
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: #20202a;
     color: #fff;
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
 `
@@ -22,13 +21,6 @@ export const PictureName = styled.div`
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
-
-    .name{
-        font-size: 23px;
-        font-style: normal;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-left: 10px;
-    }
 
     .avatar {
         width: 50px;

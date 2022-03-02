@@ -1,24 +1,26 @@
-import React from 'react'
+import React from 'react';
+import lines from '../../assets/img/lines.svg';
+import About from '../../components/About';
+import Contact from '../../components/Contact';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
+import Home from '../../components/Home';
+import './styles.css';
 
-import { CardMyInformation, ContentHome, ButtonOnMe } from './styles'
 
-import Header from '../../components/Header'
-import Home from '../../components/Home'
-import About from '../../components/Sobre'
-import Contact from '../../components/Contact'
-import Footer from '../../components/Footer'
-import studentImg from '../../assets/img/image_home.png'
 
-import './styles.css'
 
-export default function Initial(){
-    return (
-        <div className="container">
+export default function Initial() {
+   return (
+      <div>
+         <div className="container">
             <Header />
-            <Home/>
-            <About />
-            <Contact/>
-            <Footer />
-        </div>
-    )
+            <Home />
+         </div>
+         <img src={lines} />
+         <About />
+         <Contact />
+         <Footer />
+      </div>
+   )
 }

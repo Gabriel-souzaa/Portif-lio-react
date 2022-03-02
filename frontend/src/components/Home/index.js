@@ -1,23 +1,35 @@
-import React from 'react'
+import React from 'react';
+import Typical from 'react-typical';
+import MyPicture from '../../assets/img/eu2.png';
+import { CardMyInformation, ContentHome } from './styles';
 
-import { CardMyInformation, ContentHome, ButtonOnMe } from './styles'
 
-import studentImg from '../../assets/img/image_home.png'
-import MyPicture from '../../assets/img/eu2.png'
 
-export default function Home({id = "home"}){
-    return (
-        <div id={id}>
-            <ContentHome>
-                <CardMyInformation>
-                    <img src={MyPicture}></img>
-                    <div className="aboutMe">
-                        <h4 className="chargeJobText">Desenvolvedor de Softwares</h4>
-                        <h1>Gabriel Freitas</h1>
-                    </div>
-                </CardMyInformation>
-                <img className="studentImg" src={studentImg} width="500px" height="500px"/>
-            </ContentHome>
-        </div>
-    )
+export default function Home({ id = "home" }) {
+   return (
+      <div id={id}>
+         <ContentHome>
+            <CardMyInformation>
+               <div className="aboutMe">
+                  <h1>
+                     I'M GABRIEL FREITAS
+                  </h1>
+                  <h4 className="chargeJobText">
+                     <Typical
+                        steps={
+                           [
+                              "SOFTWARE DEVELOPER", 1000,
+                              "FRONTEND DEVELOPER", 1000,
+                              "BACKEND DEVELOPER", 1000
+                           ]
+                        }
+                        loop={Infinity}
+                     />
+                  </h4>
+               </div>
+            </CardMyInformation>
+            <img src={MyPicture} />
+         </ContentHome>
+      </div>
+   )
 }

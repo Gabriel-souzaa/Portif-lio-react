@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap");
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.container_about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container_about .aboutMe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container_about .aboutMe div {
+  margin: 10px;
+}
+
+.container_about .technologies {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .container_about .aboutMe .networking_img {
+    width: 350px;
+    height: 360px;
+  }
+}
