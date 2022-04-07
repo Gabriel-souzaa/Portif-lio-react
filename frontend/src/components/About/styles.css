@@ -38,9 +38,24 @@ p {
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
+  .container_about .aboutMe {
+    flex-direction: column;
+  }
+
   .container_about .aboutMe .networking_img {
     width: 350px;
     height: 360px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container_about .aboutMe {
+    flex-direction: column;
+  }
+
+  .container_about .aboutMe .networking_img {
+    width: 250px;
+    height: 260px;
   }
 }

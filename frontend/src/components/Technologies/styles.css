@@ -1,42 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap');
 
-h3{
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 30px;
-    margin-bottom: 20px;
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 h4 {
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
-.container_tec{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
+.container_tec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
 }
 
-.tec_content{
-    display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    width: 94%;
+.tec_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 94%;
 }
 
-.tec_grid3{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 50px;
+.tec_grid3 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 11rem);
+  grid-row-gap: 30px;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.info_tecs {
+  position: static;
+  z-index: 0;
 }
 
 .text_tecs {
-    width: 100px;
-    height: 100px;
-    background-color: #ddd;
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+}
+
+@media (max-width: 850px) {
+  .tec_grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 11rem);
+  }
+}
+
+@media (max-width: 650px) {
+  .tec_grid3 {
+    display: grid;
+    grid-template-columns: repeat(2, 11rem);
+  }
+}
+
+@media (max-width: 400px) {
+  .tec_grid3 {
+    display: grid;
+    grid-template-columns: repeat(1, 11rem);
+    justify-content: center;
+  }
 }

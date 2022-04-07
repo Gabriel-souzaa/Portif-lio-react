@@ -24,25 +24,9 @@
   flex-direction: column;
 }
 
-.container_contact form fieldset input {
-  margin: 0px;
-  padding: 0px;
-  outline: inherit;
-  height: 20px;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 8px;
-  border: 1px solid #000;
-}
-
 .container_contact form fieldset textarea {
   outline: inherit;
-  resize: none;
   margin-top: 20px;
-  border-radius: 8px;
-  height: 150px;
-  padding: 10px;
-  border: 1px solid #000;
 }
 
 .container_contact form fieldset button {
@@ -53,7 +37,6 @@
   height: 30px;
   border: none;
   outline: inherit;
-  cursor: pointer;
   background: #91b2fb;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
