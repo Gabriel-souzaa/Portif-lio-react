@@ -61,7 +61,7 @@ export default function Header() {
           offset={!isOpen ? -125 : -150}
           duration={500}
         >
-          Contact
+          Contato
           <div className="linelink"></div>
         </Link>
       </NavMenu>

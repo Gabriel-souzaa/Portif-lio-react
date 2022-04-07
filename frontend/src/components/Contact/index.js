@@ -43,14 +43,14 @@ export default function Contact({ id = "contact" }) {
               onChange={(event) => setMessage(event.target.value)}
               aria-label="empty textarea"
               placeholder="Deixe sua mensagem"
-              style={{ width: 200, height: 100 }}
+              style={{ height: 100 }}
             />
             <Button
               variant="contained"
               onClick={(event) => handleSubmit(event)}
               endIcon={<SendOutlined />}
             >
-              Send
+              Enviar
             </Button>
           </fieldset>
         </form>

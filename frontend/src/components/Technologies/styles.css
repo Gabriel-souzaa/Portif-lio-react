@@ -29,7 +29,7 @@ h4 {
 .tec_grid3 {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 11rem);
+  grid-template-columns: repeat(5, 12rem);
   grid-row-gap: 30px;
   width: 100%;
   justify-content: space-between;
@@ -47,21 +47,28 @@ h4 {
   background-color: #ddd;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1040px) {
   .tec_grid3 {
     display: grid;
-    grid-template-columns: repeat(3, 11rem);
+    grid-template-columns: repeat(4, 11rem);
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 890px) {
+  .tec_grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 12rem);
+  }
+}
+
+@media (max-width: 700px) {
   .tec_grid3 {
     display: grid;
     grid-template-columns: repeat(2, 11rem);
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .tec_grid3 {
     display: grid;
     grid-template-columns: repeat(1, 11rem);
