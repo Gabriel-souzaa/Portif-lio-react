@@ -1,6 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import MyPicture from '../../assets/img/eu2.png';
 import { CardMyInformation, ContentHome } from './styles';
+
+import CV_PDF from '../../assets/file/CV_Gabriel_28-03-22.pdf';
 
 
 
@@ -17,6 +21,10 @@ export default function Home({ id = "home" }) {
             <h4 className="chargeJobText">
               SOFTWARE DEVELOPER
             </h4>
+
+            <Link className="downloadCv" to={CV_PDF} target="_blank" download>
+              <h4>Baixar CV</h4>
+            </Link>
           </div>
         </CardMyInformation>
       </ContentHome>

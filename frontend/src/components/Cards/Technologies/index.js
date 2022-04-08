@@ -14,7 +14,7 @@ export default function CardTechnologies({ image, title, description }) {
   const handleClose = () => setOpen(false);
 
   return (
-    <Card sx={{ maxWidth: 345 }} onClick={() => console.log("aqui")}>
+    <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           component="img"

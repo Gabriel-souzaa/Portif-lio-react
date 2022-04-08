@@ -13,6 +13,22 @@ export const ContentHome = styled.div`
       margin-top: 50px;
     }
 
+    .downloadCv {
+      margin-top: 20px;
+      background-color: #eee;
+      color: #000;
+      border: 2px solid #91B2FB;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+
+      :hover, :active{
+        background-color: #91B2FB;
+        color: #eee;
+      }
+    }
+
     @media(max-width: 890px){
         flex-direction: column;
         text-align: center;
@@ -23,7 +39,7 @@ export const ContentHome = styled.div`
         }
     }
 
-    @media(max-width: 400px){
+    @media(max-width: 460px){
         flex-direction: column;
         text-align: center;
 

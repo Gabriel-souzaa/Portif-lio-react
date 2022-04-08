@@ -8,10 +8,11 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
   bgcolor: 'background.paper',
   boxShadow: 24,
   p: 4,
+  maxWidth: 400,
+  minWidth: 200,
 };
 
 export default function TecnologiesInfo({ title, description, handleClose, open }) {
@@ -28,9 +29,15 @@ export default function TecnologiesInfo({ title, description, handleClose, open 
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {title}
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            {description}
-          </Typography>
+          {description.map((description, key) => (
+            <div key={key}>
+              <br></br>
+              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                {description}
+              </Typography>
+            </div>
+
+          ))}
         </Box>
       </Modal>
     </div>
