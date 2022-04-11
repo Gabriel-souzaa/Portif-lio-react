@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div>
       <FooterPage>
-        Criado por Gabriel Freitas - @32dsd23
+        <p>Criado por Gabriel Freitas - @2022</p>
       </FooterPage>
     </div>
   )

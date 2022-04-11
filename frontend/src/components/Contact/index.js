@@ -4,6 +4,7 @@ import { Button, TextField } from '@mui/material';
 import TextareaAutosize from '@mui/base/TextareaAutosize';
 import { SendOutlined } from '@mui/icons-material';
 
+import ValidatorForm from '../../utils/ValidatorForm';
 import SendEmail from '../../services/sendMail';
 
 import './styles.css';
@@ -20,14 +21,13 @@ export default function Contact({ id = "contact" }) {
       const response = await SendEmail.sendEmail({
         name,
         email,
-        messageTxt: message
+        message
       });
       if (response) {
-        alert("E-mail enviado com sucesso");
-        console.log("Sucesso padrin");
+        alert("Email enviado!!");
       }
     } catch (error) {
-      console.log(error);
+      alert("Erro ao enviar email, tente novamente!!");
     }
   }
 
@@ -37,8 +37,8 @@ export default function Contact({ id = "contact" }) {
         <h3>Contato</h3>
         <form>
           <fieldset>
-            <TextField id="outlined-basic" label="Name" variant="standard" onChange={(event) => setName(event.target.value)} />
-            <TextField id="outlined-basic" label="E-mail" variant="standard" onChange={(event) => setEmail(event.target.value)} />
+            <TextField id="outlined-basic" label="Name" variant="standard" error={!ValidatorForm.isName(name)} onChange={(event) => setName(event.target.value)} />
+            <TextField id="outlined-basic" label="E-mail" variant="standard" error={!ValidatorForm.isEmail(email)} onChange={(event) => setEmail(event.target.value)} />
             <TextareaAutosize
               onChange={(event) => setMessage(event.target.value)}
               aria-label="empty textarea"
