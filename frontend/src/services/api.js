@@ -5,7 +5,7 @@ const api = axios.create({
 });
 
 api.interceptors.request.use((config) => {
-  config.headers.common['api-key'] = ``;
+  config.headers.common['api-key'] = process.env.REACT_APP_API_KEY_SENDINBLUE;
   return config;
 }, (error) => {
   return Promise.reject(error);
