@@ -22,11 +22,15 @@
   width: 50%;
   display: flex;
   flex-direction: column;
+
+  max-width: 50%;
 }
 
 .container_contact form fieldset textarea {
   outline: inherit;
   margin-top: 20px;
+
+  max-height: 200px;
 }
 
 .container_contact form fieldset button {

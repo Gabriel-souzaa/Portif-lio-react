@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import MyPicture from '../../assets/img/eu2.png';
 import { CardMyInformation, ContentHome } from './styles';
 
-import CV_PDF from '../../assets/file/CV_Gabriel_28-03-22.pdf';
+import CV_PDF from '../../assets/file/CV_Gabriel.pdf';
 
 
 
