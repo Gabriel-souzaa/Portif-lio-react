@@ -21,7 +21,7 @@ export default function Initial() {
         <img src={lines} />
         <About />
         <Technologies />
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
 
         <Header />
